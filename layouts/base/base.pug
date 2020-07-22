@@ -1,0 +1,29 @@
+doctype html
+html
+    head
+    
+        //- Объявление переменных
+        block variables
+
+        title #{pageTitle}
+        meta(charset="UTF-8" content="width=device-width, initial-scale=1.0")
+        meta(name="viewport")
+
+        //- Подключаемые CSS файлы
+        block links
+        link(rel="stylesheet", href="../../css/base.css")        
+        link(href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet")
+    body
+
+        //- Элемент .content используется для группировки всего контента страницы, кроме блока footer. Используется для "прилипания" footer блока к низу экрана
+        
+        .content
+
+            //- Блок header / Шапка сайта
+            include ../../components/header/header.pug
+
+            //- Основной контент сайта
+            block content
+
+        //- Блок footer / "Подвал" сайта
+        include ../../components/footer/footer.pug

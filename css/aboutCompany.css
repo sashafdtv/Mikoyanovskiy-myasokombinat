@@ -1,0 +1,38 @@
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+.textContent {
+  margin-bottom: 50px;
+  color: #920049;
+}
+.textContent__header h1 {
+  font-size: 130px;
+  border-bottom: 3px solid #920049;
+  width: max-content;
+  margin: 0;
+}
+.textContent__header h2 {
+  font-size: 45px;
+  margin: 0;
+}
+.textContent__text p {
+  font-size: 18px;
+}
+.textContent__text iframe {
+  margin: 50px 0;
+}
+.textContent__text__media {
+  margin: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2d3b6;
+  border-radius: 30px;
+}
+.textContent__text__media img {
+  margin: 20px;
+  border-radius: 10px;
+  height: 400px;
+}

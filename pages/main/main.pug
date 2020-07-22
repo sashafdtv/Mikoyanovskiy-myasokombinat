@@ -1,0 +1,24 @@
+//- Страница: Главная страница сайта
+//- Наследуемый шаблон: base.pug
+extends ../../layouts/base/base.pug
+
+//- Переменные
+block variables
+    - var pageTitle = "Микояновский мясокомбинат"
+
+//- Подключенные таблицы стилей
+block links
+    link(rel="stylesheet" href="../../css/main.css")
+    link(rel="stylesheet" href="../../css/animation.css") 
+
+//- Контент
+block content
+
+    //- Блок promo / Промо-блок сайта
+    include ../../components/promoMain/promoMain.pug
+
+    //- Блок info / Информационный блок
+    include ../../components/infoMain/infoMain.pug
+
+    //- Блок feedback / Блок, предлагающий воспользоваться обратной связью
+    include ../../components/feedbackMain/feedbackMain.pug

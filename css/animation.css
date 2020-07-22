@@ -1,0 +1,64 @@
+@-webkit-keyframes animation_tagline_background {
+    from {
+        background-position: -550px 0
+    }
+
+    50% {
+        background-position: 0 0
+    }
+    
+    to {
+        background-position: -550px 0px
+    }
+}
+
+@keyframes animation_tagline_logo {
+    from {
+        opacity: 1;
+        align-self: center;
+    }
+
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+        align-self: center;
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateX(-130%);
+        transition: transform 5s ease;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-130%);
+        transition: transform 5s ease;
+    }
+    
+}
+
+@keyframes animation_tagline_text {
+    from {
+        opacity: 0;
+        align-self: center;
+    }
+
+
+    60% {
+        opacity: 0;
+        transform: translateX(-60%);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translateX(10%);
+        transition: transform 5s ease;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(10%);
+        transition: transform 5s ease;
+    }
+}

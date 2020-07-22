@@ -1,0 +1,223 @@
+.containerForPromo {
+  width: 900px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.promo {
+  height: 600px;
+  width: 100%;
+  background-image: url("../img/back_for_slogan.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 150% auto;
+  display: flex;
+  justify-content: center;
+  animation: animation_tagline_background 40s ease-in-out infinite;
+}
+.promo .tagline {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
+  margin-top: 55px;
+  flex-direction: column;
+}
+.promo .tagline .tagline__logo {
+  width: 250px;
+  height: 250px;
+  background-image: url("../img/sqlogo2.jpg");
+  background-size: cover;
+  align-self: center;
+  animation: animation_tagline_logo alternate 5s ease-in-out infinite;
+}
+.promo .tagline .tagline__text {
+  width: 350px;
+  height: 150px;
+  background-color: #a51a5b;
+  align-self: center;
+  position: static;
+  color: #fff;
+  animation: animation_tagline_text alternate 5s ease-in-out infinite;
+  position: absolute;
+}
+.promo .tagline .tagline__text h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: normal;
+}
+.promo .tagline .tagline__text::before {
+  content: "";
+  display: block;
+  width: 330px;
+  height: 130px;
+  border-left: 20px solid #e2d3b6;
+  border-top: 20px solid #e2d3b6;
+  transform: translateX(-20px) translateY(-20px);
+  box-sizing: border-box;
+  position: absolute;
+}
+.promo .promoButtons {
+  height: auto;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+}
+.promo .promoButtons__btn {
+  width: 160px;
+  height: 170px;
+  background-color: rgba(141,0,71,0.5);
+  padding: 10px;
+  margin-bottom: 35px;
+  border: 5px solid #e2d3b6;
+  color: #fff;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.promo .promoButtons__btn:hover {
+  transition: all 0.4s ease;
+  background-color: #8d0047;
+}
+.promo .promoButtons__btn__title {
+  width: 100%;
+  font-size: 20px;
+  align-self: flex-end;
+  height: 60px;
+  padding-top: 5px;
+  border-top: 2px solid #e2d3b6;
+}
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.infoBlock {
+  width: 400px;
+  height: 400px;
+  background-color: #8d0047;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-top: 60px;
+}
+.infoBlock::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  transform: translateX(-20px) translateY(-20px);
+  background-color: #e2d3b6;
+  z-index: -1;
+}
+.infoBlock__img {
+  width: 200px;
+  border: 4px solid #fff;
+  margin-top: 20px;
+}
+.infoBlock__text {
+  text-align: center;
+  color: #fff;
+  padding: 0 25px;
+}
+.infoBlock__logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+.infoBlock_big {
+  width: 880px;
+  margin-left: 20px;
+  height: 449px;
+}
+.infoBlock_big__text {
+  padding: 0 60px;
+}
+.infoBlock_big__imgs {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  margin-top: 20px;
+  border-bottom: 2px solid #e2d3b6;
+}
+.infoBlock_big__imgs .infoBlock__img {
+  margin: 0 20px;
+}
+.infoBlock_big__btn {
+  width: 200px;
+  height: 60px;
+  background-color: #e2d3b6;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8d0047;
+  margin: 20px 100%;
+  padding: 4px 20px;
+  font-size: 20px;
+}
+.infoBlock_big__btn p {
+  text-align: center;
+}
+.feedback {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  align-items: center;
+}
+.feedback__block {
+  background-color: #8d0047;
+  color: #e2d3b6;
+  flex-grow: 1;
+  margin: 30px;
+  margin-right: 0;
+  font-weight: 200;
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 47px 0;
+  height: 126px;
+  width: 400px;
+}
+.feedback__block h2 {
+  margin: 0;
+  width: 100%;
+}
+.feedback__block:nth-child(3) {
+  word-wrap: break-word;
+}
+.feedback__btn {
+  width: 203px;
+  height: 203px;
+  border: 6px solid #8d0047;
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feedback__btn:hover {
+  background-color: #e2d3b6;
+  transition: all 0.5s ease;
+}
+.feedback__btn:hover img {
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}

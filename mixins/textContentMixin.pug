@@ -1,0 +1,10 @@
+//- Миксин для создания текстовых страниц
+//- Для использования миксина необходимо добавить в таблицу стилей компонент textContent
+
+mixin textContentMixin(date)
+    .container
+        .textContent
+            .textContent__header 
+                h1= date.h1
+                h2= date.h2
+            block

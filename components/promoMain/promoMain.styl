@@ -1,0 +1,91 @@
+.containerForPromo
+    width 900px
+    height 100%
+    margin auto
+    display flex
+    justify-content center
+    flex-wrap wrap
+    align-items stretch
+
+.promo
+    height 600px
+    width 100%
+    background-image url(../img/back_for_slogan.jpg)
+    background-repeat no-repeat
+    background-position 100% 100% 
+    background-size 150% auto
+    display flex
+    justify-content center
+    animation animation_tagline_background 40s ease-in-out infinite 
+    .tagline
+        width 100%
+        display flex
+        justify-content center
+        align-self flex-start
+        margin-top 55px
+        flex-direction column
+        .tagline__logo
+            width 250px
+            height 250px
+            background-image url(../img/sqlogo2.jpg)
+            background-size cover
+            align-self center
+            animation animation_tagline_logo alternate 5s ease-in-out infinite 
+        .tagline__text
+            width 350px
+            height 150px
+            background-color #a51a5b 
+            align-self center
+            position static
+            color white
+            animation animation_tagline_text alternate 5s ease-in-out infinite 
+            position absolute
+            h2
+                text-align center
+                font-size 30px
+                font-weight normal
+        .tagline__text::before
+            content ""
+            display block            
+            width 330px
+            height 130px
+            border-left 20px solid #e2d3b6
+            border-top 20px solid #e2d3b6
+            transform translateX(-20px) translateY(-20px)
+            box-sizing border-box
+            position absolute
+    .promoButtons
+        height auto
+        width 100%
+        text-align center
+        display flex
+        justify-content space-between
+        align-self flex-end
+        &__btn
+            width 160px
+            height 170px
+            background-color rgba(141, 0, 71, 0.5)
+            padding 10px
+            margin-bottom 35px
+            border 5px solid #E2D3B6
+            color white
+            font-size 10px
+            display flex
+            justify-content center
+            flex-wrap wrap
+            
+            &:hover
+               transition: all 0.4s ease
+               background-color rgba(141, 0, 71, 1)
+            &__title
+                width 100%
+                font-size 20px
+                align-self flex-end
+                height 60px
+                padding-top 5px
+                border-top 2px solid #E2D3B6
+
+
+
+            
+

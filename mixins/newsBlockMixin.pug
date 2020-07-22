@@ -1,0 +1,13 @@
+//- Миксин для создания новостного блока
+//- Для использования миксина необходимо добавить в таблицу стилей компонент textContent и newsBlock
+
+mixin newsBlockMixin (data)
+    - var date = data.date
+    - var title = data.title
+    
+    .newsBlock
+        .newsBlock__date #{date}
+        .newsBlock__news
+            .textContent__text
+                h2 #{title}
+                block
